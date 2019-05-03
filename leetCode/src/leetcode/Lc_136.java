@@ -10,6 +10,9 @@ package leetcode;
  * - 문제 유형
  *   비트 연산(LC 136. Single Number)
  *   Should have a linear runtime complexity
+ *   
+ * - 추가
+ *   빅오 표기법
  */
 public class Lc_136 {
 	public int singleNumber(int[] nums) {

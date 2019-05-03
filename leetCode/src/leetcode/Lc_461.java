@@ -9,6 +9,10 @@ package leetcode;
  * 
  * - 문제 유형
  *   비트 연산(LC 461. Hamming Distance)
+ *   
+ * - 추가
+ *   &(not short-circuiting) vs. &&(short-circuiting)
+ *   http://www.cs.columbia.edu/~lennox/3101-03/class1-slides/logical.html
  */
 public class Lc_461 {
 	public int hammingDistance(int x, int y) {
