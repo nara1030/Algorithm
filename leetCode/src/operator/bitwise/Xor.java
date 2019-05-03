@@ -1,4 +1,4 @@
-package test;
+package operator.bitwise;
 
 /*
  * - 자바 XOR 연산자 ^
