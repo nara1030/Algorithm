@@ -37,7 +37,7 @@
 	* 배열로 리스트 생성시 단점 해결
 2. 구조 및 용어
 	* 구조
-		* ![단방향 연결 리스트](./images/singly_linked_list.png)
+		* ![단방향 연결 리스트](/doIt_AlgorithmWithDataStructure/images/singly_linked_list.png)
 	* 용어
 		* 노드 클래스 Node<E>
 		* 연결 리스트 클래스 LinkedList<E>
