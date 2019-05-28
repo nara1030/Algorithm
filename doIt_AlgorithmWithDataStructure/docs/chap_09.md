@@ -40,12 +40,18 @@
 		* ![단방향 연결 리스트](/doIt_AlgorithmWithDataStructure/images/singly_linked_list.png)
 	* 용어
 		* 노드 클래스 Node<E>
+			* 두 필드(data, next)와 생성자로 구성
+			* 생성자: Node<E>의 생성자는 인수로 전달받은 data, next를 해당 필드에 설정
 		* 연결 리스트 클래스 LinkedList<E>
+			* 두 필드(head, crnt)로 구성
+			* head: 머리 노드 가리킴
+			* crnt: 현재 선택 노드 가리킴(검색, 삭제 등 용도로 사용)
 		* 기타
 			* 자기 참조(self-referential)형: 데이터용 필드와 별도로 자기 자신과 같은 클래스형의 인스턴스를 참조하기 위한 참조용 필드를 가지는 클래스 구조
 			* 클래스형 변수인 data는 데이터 그 자체가 아니라 어디까지나 데이터에 대한 '참조'임
 3. 구현 단계
-	*
+	1. ㅇ
+	2. ㅇ
 4. 구현 코드
 
 ### 커서로 연결 리스트 만들기
