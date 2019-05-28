@@ -62,7 +62,7 @@
 		1. 개요
 			* 어떤 조건을 만족하는 노드를 검색
 			* 검색에 사용하는 알고리즘은 선형 검색이고 검색할 노드를 만날 때까지 머리 노드부터 스캔함
-				* ![검색](/doIt_AlgorithmWithDataStructure/images/search_singly.png)
+				* ![검색](/doIt_AlgorithmWithDataStructure/images/search_singly.jpg)
 		2. 종료 조건
 			* 조건 1. 검색 조건을 만족하는 노드를 찾지 못하고 꼬리 노드를 지나가기 직전인 경우
 			* 조건 2. 검색 조건을 만족하는 노드를 찾은 경우
