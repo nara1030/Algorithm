@@ -53,6 +53,11 @@
 3. 구현 단계애 따른 구현 코드
 	1. 노드 형이 클래스 Node<E>형인 연결 리스트를 클래스 LinkedList<E>로 구현 - [A](#A)
 	2. 생성자 LinkedList - [B](#B)
+		* 클래스 LinkedList<E>의 생성자는 머리 노드를 가리키는 변수 head에 null을 대입
+			* 비어 있는 연결 리스트는 노드도 없고 head가 가리키는 곳도 없으므로 그 값을 null로 함
+			* Node<E>형의 변수 head가 머리 노드에 대한 참조이지 머리 노드 그 자체가 아님에 주의
+		* 연결 리스트의 노드 갯수를 판단하는 방법
+	3. 검색을 수행하는 search 메서드 - [C](#C)
 
 #### A
 ```java
@@ -60,7 +65,7 @@
 public class LinkedList<E> {
 	// 노드
 	class Node<E> {
-		private E data;			// 데이터
+		private E data;		// 데이터
 		private Node<E> next; 	// 뒤쪽 포인터(다음 노드 참조)
 
 		// 생성자
@@ -75,6 +80,26 @@ public class LinkedList<E> {
 ```
 
 #### B
+```java
+// 생성자
+public LinkedList() {
+	head = crnt = null;
+}
+
+// 연결 리스트가 비어 있는지 확인합니다.
+head == null;
+
+// 노드가 1개인지 확인합니다.
+head.next == null;
+
+// 노드가 2개인지 확인합니다.
+head.next.next == null;
+
+// p가 가리키는 노드가 꼬리 노드인지 확인합니다.
+p.next == null;
+```
+
+#### C
 
 
 ### 커서로 연결 리스트 만들기
