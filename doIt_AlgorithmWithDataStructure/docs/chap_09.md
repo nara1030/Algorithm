@@ -66,7 +66,17 @@
 		2. 종료 조건
 			* 조건 1. 검색 조건을 만족하는 노드를 찾지 못하고 꼬리 노드를 지나가기 직전인 경우
 			* 조건 2. 검색 조건을 만족하는 노드를 찾은 경우
+		3. 참고
+			* [Java Generic](http://greatzzo.blogspot.com/2016/03/java-generic.html)
+			* Comparable and Comparator: 용도와 목적(사용 이유)
+				* [자바의 Comparable, Comparator](https://brunch.co.kr/@kd4/7)
 	4. 머리에 노드를 삽입하는 addFirst 메서드 - [D](#D)
+	5. 꼬리에 노드를 삽입하는 addLast 메서드 - [E](#E)
+	6. 머리 노드를 삭제하는 removeFirst 메서드 - [F](#F)
+	7. 꼬리 노드를 삭제하는 removeLast 메서드 - [G](#G)
+	8. 선택한 노드를 삭제하는 remove 메서드 - [H](#H)
+	9. 기타
+		*
 
 #### A
 ```java
@@ -109,6 +119,23 @@ p.next == null;
 ```
 
 #### C
+```java
+// 노드 검색
+public E search(E obj, Comparator<? super E> c) {
+	Node<E> ptr = head; 	// 현재 스캔 중인 노드
+
+	while (ptr != null) {
+		if (c.compare(obj, ptr.data) == 0) { 	// 검색 성공
+			crnt = ptr;
+			return ptr.data;
+		}
+		ptr = ptr.next; 	// 다음 노드를 선택
+	}
+	return null; 	// 검색 실패
+}
+```
+
+#### D
 
 
 ### 커서로 연결 리스트 만들기
