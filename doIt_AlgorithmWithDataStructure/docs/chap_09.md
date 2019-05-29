@@ -72,6 +72,7 @@
 				* [자바 객체 정렬의 기준을 정하는 방법](https://jeong-pro.tistory.com/173)
 				* [자바의 Comparable, Comparator](https://brunch.co.kr/@kd4/7)
 				* [자바 배열 및 ArrayList 정렬](https://developer88.tistory.com/75)
+			* [Arrays 클래스 sort() 메소드](https://docs.oracle.com/javase/7/docs/api/java/util/Arrays.html)
 	4. 머리에 노드를 삽입하는 addFirst 메서드 - [D](#D)
 	5. 꼬리에 노드를 삽입하는 addLast 메서드 - [E](#E)
 	6. 머리 노드를 삭제하는 removeFirst 메서드 - [F](#F)
