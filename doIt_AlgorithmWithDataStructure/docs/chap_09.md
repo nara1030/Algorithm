@@ -69,7 +69,9 @@
 		3. 참고
 			* [Java Generic](http://greatzzo.blogspot.com/2016/03/java-generic.html)
 			* Comparable and Comparator: 용도와 목적(사용 이유)
+				* [자바 객체 정렬의 기준을 정하는 방법](https://jeong-pro.tistory.com/173)
 				* [자바의 Comparable, Comparator](https://brunch.co.kr/@kd4/7)
+				* [자바 배열 및 ArrayList 정렬](https://developer88.tistory.com/75)
 	4. 머리에 노드를 삽입하는 addFirst 메서드 - [D](#D)
 	5. 꼬리에 노드를 삽입하는 addLast 메서드 - [E](#E)
 	6. 머리 노드를 삭제하는 removeFirst 메서드 - [F](#F)
@@ -122,16 +124,16 @@ p.next == null;
 ```java
 // 노드 검색
 public E search(E obj, Comparator<? super E> c) {
-	Node<E> ptr = head; 	// 현재 스캔 중인 노드
+	Node<E> ptr = head; 						// 현재 스캔 중인 노드
 
 	while (ptr != null) {
 		if (c.compare(obj, ptr.data) == 0) { 	// 검색 성공
 			crnt = ptr;
 			return ptr.data;
 		}
-		ptr = ptr.next; 	// 다음 노드를 선택
+		ptr = ptr.next; 						// 다음 노드를 선택
 	}
-	return null; 	// 검색 실패
+	return null; 								// 검색 실패
 }
 ```
 
