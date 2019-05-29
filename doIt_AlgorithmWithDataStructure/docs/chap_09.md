@@ -77,6 +77,8 @@
 				* [Design Patterns](https://dzone.com/articles/design-patterns-in-the-real-world-strategy)
 				* [Example-1](https://w3.cs.jmu.edu/bernstdh/web/common/labs-solutions/questions_abstract-classes-and-interfaces/)
 				* [Example-2](https://www.cs.umb.edu/~bobw/CS110/Project3/index.html)
+			* 예제 코드
+				* [<? super E> vs. <? extends E>](https://stackoverflow.com/questions/1368166/what-is-a-difference-between-super-e-and-extends-e)
 	4. 머리에 노드를 삽입하는 addFirst 메서드 - [D](#D)
 	5. 꼬리에 노드를 삽입하는 addLast 메서드 - [E](#E)
 	6. 머리 노드를 삭제하는 removeFirst 메서드 - [F](#F)
