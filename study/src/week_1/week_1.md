@@ -9,6 +9,7 @@
 			1. [Java Generics - Lower and Upper bound 1](http://egloos.zum.com/ryukato/v/1182733)
 			2. [Java Generics - Lower and Upper bound 2](https://tudip.com/blog-post/java-generics-lower-upper-bound/)
 			3. [Java Generics - Lower Bounded Wildcards](https://www.tutorialspoint.com/java_generics/java_generics_lower_bounded.htm)
+			4. [Java Generics - 와일드카드 심화학습](http://egloos.zum.com/iilii/v/4342731)
  
 * 코딩
 	1. 입력받은 식물 좌표로 단방향 연결 노드 생성
