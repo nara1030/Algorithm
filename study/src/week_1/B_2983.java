@@ -7,6 +7,10 @@ import java.util.Comparator;
  *   - 첫 줄: 7 5(식물의 수 점프의 수)
  *   - 두번째 줄: ACDBB
  *   - 세번째 줄: 식물 좌표
+ *   
+ * - 고려 사항
+ *   - 식물 수, 점프 수: int
+ *   - 식물 좌표: int
  */
 
 public class B_2983 {
@@ -107,5 +111,34 @@ class Plant {
 	/** 확인 위해 추가 */
 	public String getXY() {
 		return x + ", " + y;
+	}
+
+	/** 방향 판단 */
+	public String getDirection(Plant fromPosition, Plant toPosition) {
+		int fromX = fromPosition.x;
+		int fromY = fromPosition.y;
+		int toX = toPosition.x;
+		int toY = toPosition.y;
+		int diffX = toX - fromX;
+		int diffY = toY - fromY;
+
+		if (diffX > 0 && diffY > 0) {
+			return "A";
+		} else if (diffX > 0 && diffY < 0) {
+			return "B";
+		} else if (diffX < 0 && diffY > 0) {
+			return "C";
+		} else if (diffX < 0 && diffY < 0) {
+			return "D";
+		} else {
+			return "N";
+		}
+	}
+
+	/** 거리 판단 */
+	public int getDistance(Plant fromPosition, Plant toPosition) {
+		int squareX = (toPosition.x - fromPosition.x) * (toPosition.x - fromPosition.x);
+		int squareY = (toPosition.y - fromPosition.y) * (toPosition.y - fromPosition.y);
+		return (squareX + squareY);
 	}
 }
