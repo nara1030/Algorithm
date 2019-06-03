@@ -1,28 +1,12 @@
 package week_1;
 
+import java.util.Comparator;
+
 /*
  * - 입력 참고
  *   - 첫 줄: 7 5(식물의 수 점프의 수)
  *   - 두번째 줄: ACDBB
  *   - 세번째 줄: 식물 좌표
- * 
- * - 토의
- *   - 단계별 개발(TDD)
- *     - 입력값 받지 말고 하드 코딩으로 확인
- *   - 기타
- *     - 다음 노드 참조를 setNode로 설정해주느냐, 생성자로 해주느냐
- *     - 내부 클래스 static 여부
- *       - 빌더 패턴(static) vs. 링크드 리스트(non-static)
- * 
- * - 코드 생성
- *   A. 입력받은 식물 좌표로 단방향 연결 노드 생성
- *     - 좌표로 노드 생성
- *       - setNode 메소드(addLast) 구현
- *     - 검색 구현
- *       - Comparator
- *     - 삭제 구현
- *   B. 테스트
- *     - 노드 생성시 내부 클래스에 접근하진 않음
  */
 
 public class B_2983 {
@@ -51,12 +35,12 @@ class LinkedList<E> {
 			this.next = next;
 		}
 
-		/** 확인 위해 추가 */
+		// 확인 위해 추가
 		public E getNode() {
 			return position;
 		}
 
-		/** 확인 위해 추가 */
+		// 확인 위해 추가
 		public Node<E> getNextNode() {
 			return next;
 		}
@@ -73,8 +57,8 @@ class LinkedList<E> {
 	// 삽입: 없을 땐 머리, 있으면 꼬리
 	/** 머리에 노드 삽입 */
 	public void addFirst(E obj) {
-		Node<E> ptr = head;
-		head = selectedNode = new Node(obj, ptr);
+		Node<E> pointer = head;
+		head = selectedNode = new Node(obj, pointer);
 	}
 
 	/** 꼬리에 노드 삽입 */
@@ -82,17 +66,31 @@ class LinkedList<E> {
 		if (head == null) { // 리스트가 비어있으면 머리에 삽입
 			addFirst(obj);
 		} else {
-			Node<E> ptr = head;
-			while (ptr.next != null) { // while문 종료 시, ptr은 꼬리 노드를 가리킴
-				ptr = ptr.next;
+			Node<E> pointer = head;
+			while (pointer.next != null) { // while문 종료 시, pointer은 꼬리 노드를 가리킴
+				pointer = pointer.next;
 			}
-			ptr.next = selectedNode = new Node(obj, null);
+			pointer.next = selectedNode = new Node(obj, null);
 		}
 	}
 
-	/** 확인 위해 추가 */
+	// 확인 위해 추가
 	public Node<E> getHead() {
 		return head;
+	}
+
+	/** 노드 검색(순회) */
+	public E search(E obj, Comparator<? super E> c) {
+		Node<E> pointer = head; // 현재 스캔 중인 노드
+
+		while (pointer != null) {
+			if (c.compare(obj, pointer.position) == 0) { // 검색 성공
+				selectedNode = pointer;
+				return pointer.position;
+			}
+			pointer = pointer.next; // 다음 노드를 선택
+		}
+		return null; // 검색 실패
 	}
 }
 
