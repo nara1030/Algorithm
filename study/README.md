@@ -8,5 +8,5 @@
 </br></br>
 
 ### 추가
-* 1주차: 단방향 링크드리스트
+* [1주차: 단방향 링크드리스트](https://github.com/nara1030/Algorithm/blob/master/study/src/week_1/week_1.md)
 * 2주차: 해시
