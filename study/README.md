@@ -25,7 +25,7 @@
 				* [이차원 배열과 연산](https://www.acmicpc.net/problem/17140)
 				* [연구소 3](https://www.acmicpc.net/problem/17142)
 			* [기출문제](https://www.acmicpc.net/workbook/view/1152)
-		* [프로그래스 - 주제별](https://programmers.co.kr/learn/challenges?tab=practice_kit))
+		* [프로그래스 - 주제별](https://programmers.co.kr/learn/challenges?tab=practice_kit)
 		* 역량 테스트에선 사용할 수 있었던 문법이 실전에서는 컴파일 오류를 띄우는 경우
 			* 정렬 코드 등
 * 2020년도
