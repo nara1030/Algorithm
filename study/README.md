@@ -5,6 +5,7 @@
 ### 회의록
 * [1주차 회의록](https://github.com/bulkwang-study/algol/blob/master/docs/week_1.md)
 * [2주차 회의록](https://github.com/bulkwang-study/algol/blob/master/docs/week_2.md)
+* [3주차 회의록](https://github.com/bulkwang-study/algol/blob/master/docs/week_3.md)
 </br></br>
 
 ### 추가
