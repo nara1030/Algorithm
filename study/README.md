@@ -9,7 +9,8 @@
 
 ### 추가
 * [1주차: 단방향 링크드리스트](https://github.com/nara1030/Algorithm/blob/master/study/src/week_1/week_1.md)
-* 2주차: 해시
+* 2주차: 해시 테이블
+* [3주차: 스택&큐](https://github.com/nara1030/Algorithm/blob/master/study/docs/stack_and_queue.md)
 
 ### 목표
 * 2019년도
