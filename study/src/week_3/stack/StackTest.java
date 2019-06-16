@@ -5,7 +5,8 @@ package week_3.stack;
  *  - 구현상 특이사항 
  *    1. 중복 클래스 사용 O 
  *    2. 제네릭 사용 O
- *    3. Queue와 다르게 next가 아닌 previous 이용 구현
+ *    3. 접근 제한자 반영 X
+ *    4. Queue와 다르게 next가 아닌 previous 이용 구현
  *  - 미비사항
  *    1. 스택 비었을 시 예외처리 필요
  *    2. 내부 분기문 사용 않고 구현 필요
