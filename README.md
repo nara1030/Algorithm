@@ -19,5 +19,7 @@
 
 ## 참고
 * [영리한 프로그래밍을 위한 알고리즘 강좌](https://www.inflearn.com/course/%EC%95%8C%EA%B3%A0%EB%A6%AC%EC%A6%98-%EA%B0%95%EC%A2%8C/lecture/4072)
+* [코딩인터뷰 알고리즘 참고사이트](https://12bme.tistory.com/117)
+* [제로초 알고리즘 강의](https://www.zerocho.com/category/Algorithm?page=3)
 
 ##### [목차로 이동](#목차)
